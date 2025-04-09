@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Lumina - Crème hydratante bio premium à 98% d'ingrédients naturels. Vegan, cruelty-free et fabriqué en France.">
+    <meta name="keywords" content="crème hydratante, bio, cosmétique naturel, soin visage, peau sensible">
+    <meta name="author" content="Lumina Beauté">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lumina-beaute.com/">
+    <meta property="og:title" content="Lumina | Soin Visage Bio">
+    <meta property="og:description" content="Crème hydratante bio premium pour une peau éclatante naturellement">
+    <meta property="og:image" content="https://lumina-beaute.com/images/social-preview.jpg">
+    <title>Lumina | Soin Visage Bio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS via CDN (temporary solution) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#5a7d5a',
+              secondary: '#f9f7f3', 
+              accent: '#4a6d4a'
+            },
+            fontFamily: {
+              'playfair': ['"Playfair Display"', 'serif'],
+              'montserrat': ['Montserrat', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-[#f9f7f3] text-[#333]">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-[#f0f0f0]">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-medium heading-font text-[#5a7d5a]">LUMINA</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#product" class="hover:text-[#5a7d5a] transition-smooth">Le Produit</a>
+                <a href="#story" class="hover:text-[#5a7d5a] transition-smooth">Notre Histoire</a>
+                <a href="#testimonials" class="hover:text-[#5a7d5a] transition-smooth">Avis</a>
+                <a href="#faq" class="hover:text-[#5a7d5a] transition-smooth">FAQ</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#cart" class="p-2 hover:text-[#5a7d5a] transition-smooth">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                <button class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0 md:pr-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold heading-font mb-6 leading-tight">
+                    Une peau éclatante, <span class="text-[#5a7d5a]">naturellement</span>
+                </h1>
+                <p class="text-lg mb-8 text-gray-600">
+                    Notre crème hydratante bio à 98% d'ingrédients naturels pour une peau nourrie et protégée toute la journée.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#product" class="bg-[#5a7d5a] hover:bg-[#4a6d4a] text-white px-8 py-3 rounded-full text-center transition-smooth">
+                        Découvrir
+                    </a>
+                    <a href="#purchase" class="border border-[#5a7d5a] text-[#5a7d5a] hover:bg-[#f0f5f0] px-8 py-3 rounded-full text-center transition-smooth">
+                        Acheter maintenant
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-white p-4 rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Crème hydratante bio Lumina" 
+                         class="w-full h-auto rounded-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold heading-font mb-16 text-center">Notre Produit Phare</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Product Images -->
+                <div class="lg:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Crème hydratante Lumina" 
+                                 class="w-full h-96 object-cover rounded-lg shadow-md">
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Crème hydratante application" 
+                                 class="w-full h-48 object-cover rounded-lg shadow-md">
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Ingrédients naturels" 
+                                 class="w-full h-48 object-cover rounded-lg shadow-md">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Details -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold heading-font mb-4">Crème Hydratante Bio Lumina</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 ml-2">4.7 (128 avis)</span>
+                    </div>
+                    
+                    <p class="text-2xl font-bold text-[#5a7d5a] mb-6">49€ <span class="text-lg text-gray-500 line-through">59€</span></p>
+                    
+                    <p class="mb-6 text-gray-600">
+                        Notre crème hydratante premium à 98% d'ingrédients naturels combine les bienfaits de l'aloe vera bio, 
+                        de l'huile d'argan et de l'extrait de camomille pour une hydratation intense et durable.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold mb-2">Bénéfices :</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#5a7d5a] mt-1 mr-2"></i>
+                                <span>Hydratation 24h</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#5a7d5a] mt-1 mr-2"></i>
+                                <span>Apaisante et anti-rougeurs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#5a7d5a] mt-1 mr-2"></i>
+                                <span>Texture légère et non grasse</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-[#5a7d5a] mt-1 mr-2"></i>
+                                <span>Convient à tous les types de peau</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold mb-2">Ingrédients clés :</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-[#f0f5f0] text-[#5a7d5a] px-3 py-1 rounded-full text-sm">Aloe Vera Bio</span>
+                            <span class="bg-[#f0f5f0] text-[#5a7d5a] px-3 py-1 rounded-full text-sm">Huile d'Argan</span>
+                            <span class="bg-[#f0f5f0] text-[#5a7d5a] px-3 py-1 rounded-full text-sm">Camomille</span>
+                            <span class="bg-[#f0f5f0] text-[#5a7d5a] px-3 py-1 rounded-full text-sm">Vitamine E</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold mb-2">Mode d'utilisation :</h4>
+                        <p class="text-gray-600">
+                            Appliquer matin et soir sur visage et cou préalablement nettoyés. Masser délicatement jusqu'à pénétration complète.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex items-center border rounded-full px-4 py-2">
+                            <button class="text-gray-500 hover:text-[#5a7d5a]">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="mx-4">1</span>
+                            <button class="text-gray-500 hover:text-[#5a7d5a]">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="bg-[#5a7d5a] hover:bg-[#4a6d4a] text-white px-8 py-3 rounded-full transition-smooth flex-1">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storytelling Section -->
+    <section id="story" class="py-20 px-6 bg-[#f9f7f3]">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold heading-font mb-16 text-center">Notre Histoire</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fondatrice Lumina" 
+                         class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold heading-font mb-4">Des valeurs au cœur de notre démarche</h3>
+                    <p class="mb-6 text-gray-600">
+                        Tout a commencé avec une simple idée : créer des soins cosmétiques qui respectent à la fois la peau et la planète. 
+                        Après des années de recherche et de développement, nous avons lancé notre première crème hydratante bio en 2020.
+                    </p>
+                    <p class="mb-6 text-gray-600">
+                        Chez Lumina, nous croyons en une beauté responsable. Nos produits sont :
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-[#5a7d5a] text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-leaf text-xs"></i>
+                            </div>
+                            <span>100% cruelty-free et vegan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-[#5a7d5a] text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-recycle text-xs"></i>
+                            </div>
+                            <span>Emballages recyclables et rechargeables</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-[#5a7d5a] text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">
+                                <i class="fas fa-hand-holding-heart text-xs"></i>
+                            </div>
+                            <span>Fabriqués en France avec des ingrédients locaux</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-[#5a7d5a] font-medium hover:underline">
+                        En savoir plus sur notre engagement
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold heading-font mb-16 text-center">Ce qu'ils disent de nous</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#f9f7f3] p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Il y a 2 semaines</span>
+                    </div>
+                    <p class="mb-4 italic text-gray-600">
+                        "Je suis conquise par cette crème ! Ma peau n'a jamais été aussi douce et hydratée. 
+                        Le parfum est subtil et naturel, c'est exactement ce que je cherchais."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+                             alt="Sophie D." 
+                             class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium">Sophie D.</p>
+                            <p class="text-sm text-gray-500">Paris, France</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-[#f9f7f3] p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Il y a 1 mois</span>
+                    </div>
+                    <p class="mb-4 italic text-gray-600">
+                        "Enfin une crème qui hydrate vraiment sans laisser de film gras. 
+                        J'ai une peau mixte et c'est le premier produit qui convient parfaitement à mon type de peau."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+                             alt="Camille L." 
+                             class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium">Camille L.</p>
+                            <p class="text-sm text-gray-500">Lyon, France</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-[#f9f7f3] p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">Il y a 3 semaines</span>
+                    </div>
+                    <p class="mb-4 italic text-gray-600">
+                        "J'apprécie particulièrement l'engagement écologique de la marque. 
+                        Le produit est efficace et l'emballage est rechargeable, c'est parfait !"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Thomas P." 
+                             class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-medium">Thomas P.</p>
+                            <p class="text-sm text-gray-500">Bordeaux, France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 bg-[#f9f7f3]">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold heading-font mb-16 text-center">Questions fréquentes</h2>
+            
+            <div class="space-y-4">
+                <!-- Question 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="font-medium text-lg">Votre crème convient-elle aux peaux sensibles ?</h3>
+                        <i class="fas fa-chevron-down text-[#5a7d5a] transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>
+                            Oui, notre crème a été spécialement formulée pour convenir aux peaux sensibles. 
+                            Elle ne contient pas de parfums synthétiques, d'alcool ou d'ingrédients agressifs. 
+                            Nous recommandons cependant de faire un test dans le pli du coude avant toute première utilisation.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="font-medium text-lg">Quels sont les délais de livraison ?</h3>
+                        <i class="fas fa-chevron-down text-[#5a7d5a] transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>
+                            Pour la France métropolitaine, comptez 2 à 3 jours ouvrés. 
+                            Pour l'Europe, les délais sont de 3 à 5 jours ouvrés. 
+                            Nous expédions les commandes dans les 24h suivant leur validation.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Question 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="font-medium text-lg">Proposez-vous des échantillons ?</h3>
+                        <i class="fas fa-chevron-down text-[#5a7d5a] transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>
+                            Oui, nous proposons des échantillons de 5ml pour découvrir notre crème hydratante. 
+                            Vous pouvez les ajouter à votre commande pour seulement 2€ (déductibles de votre prochain achat).
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Question 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left">
+                        <h3 class="font-medium text-lg">Comment recharger mon produit ?</h3>
+                        <i class="fas fa-chevron-down text-[#5a7d5a] transition-transform duration-300"></i>
+                    </button>
+                    <div class="mt-3 text-gray-600">
+                        <p>
+                            Nous proposons des recharges éco-responsables pour tous nos produits. 
+                            Il vous suffit de commander la recharge correspondante sur notre site et de la verser dans votre flacon original. 
+                            Cela vous permet d'économiser 20% sur le prix du produit et de réduire vos déchets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 bg-[#5a7d5a] text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold heading-font mb-6">Prêt à sublimer votre peau ?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Rejoignez nos milliers de clients satisfaits et découvrez la différence Lumina.
+            </p>
+            <a href="#purchase" class="inline-block bg-white text-[#5a7d5a] hover:bg-[#f0f5f0] px-8 py-3 rounded-full font-medium transition-smooth">
+                Acheter maintenant
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 px-6 border-t border-[#f0f0f0]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold heading-font text-[#5a7d5a] mb-4">LUMINA</h3>
+                    <p class="text-gray-600 mb-4">
+                        Des soins cosmétiques bio et éthiques pour une beauté responsable.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-[#5a7d5a]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-[#5a7d5a]">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-[#5a7d5a]">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Produits</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Crème hydratante</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Nouveautés</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Meilleures ventes</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Recharges</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Entreprise</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Notre histoire</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Nos engagements</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Recrutement</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#5a7d5a]">Presse</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-[#5a7d5a] mt-1 mr-2"></i>
+                            <a href="mailto:contact@lumina-beaute.com" class="text-gray-600 hover:text-[#5a7d5a]">contact@lumina-beaute.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-[#5a7d5a] mt-1 mr-2"></i>
+                            <span class="text-gray-600">01 23 45 67 89</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#5a7d5a] mt-1 mr-2"></i>
+                            <span class="text-gray-600">12 Rue Beauté, 75000 Paris</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#f0f0f0] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2023 Lumina Beauté. Tous droits réservés.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-[#5a7d5a] text-sm">CGV</a>
+                    <a href="#" class="text-gray-500 hover:text-[#5a7d5a] text-sm">Mentions légales</a>
+                    <a href="#" class="text-gray-500 hover:text-[#5a7d5a] text-sm">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-50 hidden flex-col justify-center items-center p-6">
+        <button id="close-menu" class="absolute top-6 right-6 text-2xl">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="flex flex-col items-center space-y-8">
+            <a href="#product" class="text-2xl hover:text-[#5a7d5a]">Le Produit</a>
+            <a href="#story" class="text-2xl hover:text-[#5a7d5a]">Notre Histoire</a>
+            <a href="#testimonials" class="text-2xl hover:text-[#5a7d5a]">Avis</a>
+            <a href="#faq" class="text-2xl hover:text-[#5a7d5a]">FAQ</a>
+            <a href="#purchase" class="bg-[#5a7d5a] text-white px-8 py-3 rounded-full text-lg mt-4">Acheter</a>
+        </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+        
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+        
+        // FAQ accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
